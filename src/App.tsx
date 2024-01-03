@@ -1,16 +1,11 @@
-import './App.css'
+import './App.css';
+import Banner from './components/banner/banner';
 
 function App() {
 
   return (
     <>
-      <div className='site-name'>
-        Archi
-      </div>
-      <br></br>
-      <div>
-        Games
-      </div>
+      <Banner />
     </>
   )
 }
