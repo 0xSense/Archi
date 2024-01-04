@@ -2,4 +2,9 @@
     display: flex;
     width: 100%;
     gap: 100px;
+    align-items: center;
+}
+
+.site-name {
+    font-size: 48px;
 }

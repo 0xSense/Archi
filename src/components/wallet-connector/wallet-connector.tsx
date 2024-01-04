@@ -2,7 +2,7 @@
 const WalletConnector = () => {
     return (
         <div>
-            <button>Wallet Connect</button>
+            <button>Connect</button>
         </div>
     );
 };

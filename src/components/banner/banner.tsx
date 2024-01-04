@@ -7,19 +7,15 @@ const Banner = () => {
             <div className='site-name'>
                 <b>Archi</b>
             </div>
-
+            
             <div>
-                <button>Shippers</button>
-            </div>
-
-            <div>
-                <button>Misc</button>
+                <div>Inventory</div>
             </div>
             
             <div>
-                <button>Games</button>
+                <div>Games</div>
             </div>
-            
+
             <div>
                 <WalletConnector />
             </div>
