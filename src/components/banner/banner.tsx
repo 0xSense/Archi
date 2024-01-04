@@ -4,19 +4,22 @@ import WalletConnector from '../wallet-connector/wallet-connector';
 const Banner = () => {
     return(
         <div className="banner-wrapper" >
-            <div className='site-name'>
+            <div className='site-logo'>
                 <b>Archi</b>
             </div>
             
-            <div>
-                <div>Inventory</div>
+            <div className='user-utility'>
+                <div className='inventory-button'>
+                    <div>Inventory</div>
+                </div>
+
+                <div className='games-button'>
+                    <div>Games</div>
+                </div>
             </div>
             
-            <div>
-                <div>Games</div>
-            </div>
 
-            <div>
+            <div className='wallet-connect'>
                 <WalletConnector />
             </div>
         </div>

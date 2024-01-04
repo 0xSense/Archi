@@ -1,10 +1,28 @@
 .banner-wrapper {
     display: flex;
-    width: 100%;
+    width: 100vw;
     gap: 100px;
     align-items: center;
+    justify-content: center;
+    padding-top: 10px;
 }
 
-.site-name {
+.site-logo {
+    padding-left: 16px;
     font-size: 48px;
+}
+
+.user-utility {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.games-button {
+    padding-left: 16px;
+}
+
+.wallet-connect {
+    padding-right: 16px;
 }
