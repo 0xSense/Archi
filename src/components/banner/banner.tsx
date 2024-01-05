@@ -9,13 +9,14 @@ const Banner = () => {
             </div>
             
             <div className='user-utility'>
-                <div className='inventory-button'>
-                    <div>Inventory</div>
+                <div>
+                    <button className='inventory-button'>Inventory</button>
                 </div>
 
-                <div className='games-button'>
-                    <div>Games</div>
+                <div >
+                    <button className='games-button'>Games</button>
                 </div>
+                
             </div>
             
 
