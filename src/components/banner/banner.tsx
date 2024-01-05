@@ -13,12 +13,10 @@ const Banner = () => {
                     <button className='inventory-button'>Inventory</button>
                 </div>
 
-                <div >
+                <div>
                     <button className='games-button'>Games</button>
                 </div>
-                
             </div>
-            
 
             <div className='wallet-connect'>
                 <WalletConnector />
