@@ -16,6 +16,7 @@ const Banner = () => {
                 <div className='games-button'>
                     <div>Games</div>
                 </div>
+                
             </div>
             
 
