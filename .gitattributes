@@ -1,3 +1,2 @@
 * linguist-vendored
-*.ts linguist-vendored=false
 *.mk linguist-detectable=false
