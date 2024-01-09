@@ -1,3 +1,4 @@
+import './wallet-connector.css';
 
 const WalletConnector = () => {
     return (
