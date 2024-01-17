@@ -15,7 +15,6 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./web/*"],
       "@archi/anchor": ["anchor/src/index.ts"]
     }
   },

@@ -1,46 +1,65 @@
 {
   "name": "web",
   "$schema": "../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "web",
+  "sourceRoot": "web/src",
   "projectType": "application",
   "targets": {
     "build": {
-      "executor": "@nx/next:build",
+      "executor": "@nx/webpack:webpack",
       "outputs": ["{options.outputPath}"],
       "defaultConfiguration": "production",
       "options": {
-        "outputPath": "dist/web"
+        "compiler": "babel",
+        "outputPath": "dist/web",
+        "index": "web/src/index.html",
+        "baseHref": "/",
+        "main": "web/src/main.tsx",
+        "tsConfig": "web/tsconfig.app.json",
+        "assets": ["web/src/favicon.ico", "web/src/assets"],
+        "styles": ["web/src/styles.css"],
+        "scripts": [],
+        "webpackConfig": "web/webpack.config.js",
+        "postcssConfig": "web/postcss.config.js"
       },
       "configurations": {
         "development": {
-          "outputPath": "web"
+          "extractLicenses": false,
+          "optimization": false,
+          "sourceMap": true,
+          "vendorChunk": true
         },
-        "production": {}
+        "production": {
+          "fileReplacements": [
+            {
+              "replace": "web/src/environments/environment.ts",
+              "with": "web/src/environments/environment.prod.ts"
+            }
+          ],
+          "optimization": true,
+          "outputHashing": "all",
+          "sourceMap": false,
+          "namedChunks": false,
+          "extractLicenses": true,
+          "vendorChunk": false
+        }
       }
     },
     "serve": {
-      "executor": "@nx/next:server",
+      "executor": "@nx/webpack:dev-server",
       "defaultConfiguration": "development",
       "options": {
         "buildTarget": "web:build",
-        "dev": true,
+        "hmr": true,
         "port": 3000
       },
       "configurations": {
         "development": {
-          "buildTarget": "web:build:development",
-          "dev": true
+          "buildTarget": "web:build:development"
         },
         "production": {
           "buildTarget": "web:build:production",
-          "dev": false
+          "hmr": false
         }
-      }
-    },
-    "export": {
-      "executor": "@nx/next:export",
-      "options": {
-        "buildTarget": "web:build:production"
       }
     },
     "lint": {

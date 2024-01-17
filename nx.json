@@ -49,11 +49,15 @@
   "generators": {
     "@nx/react": {
       "application": {
+        "style": "css",
+        "linter": "eslint",
+        "bundler": "webpack",
         "babel": true
-      }
-    },
-    "@nx/next": {
-      "application": {
+      },
+      "component": {
+        "style": "css"
+      },
+      "library": {
         "style": "css",
         "linter": "eslint"
       }
