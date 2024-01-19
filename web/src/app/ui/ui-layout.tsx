@@ -14,7 +14,7 @@ import toast, { Toaster } from 'react-hot-toast';
 
 const pages: { label: string; path: string }[] = [
   { label: 'Account', path: '/account' },
-  { label: 'Games', path: '/games' },
+  { label: 'Clusters', path: '/clusters' },
   { label: 'Inventory', path: '/inventory' },
 ];
 
