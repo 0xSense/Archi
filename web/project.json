@@ -18,8 +18,8 @@
         "assets": ["web/src/favicon.ico", "web/src/assets"],
         "styles": ["web/src/styles.css"],
         "scripts": [],
-        "isolatedConfig": true,
-        "webpackConfig": "web/webpack.config.js"
+        "webpackConfig": "web/webpack.config.js",
+        "postcssConfig": "web/postcss.config.js"
       },
       "configurations": {
         "development": {
@@ -64,10 +64,7 @@
     },
     "lint": {
       "executor": "@nx/eslint:lint",
-      "outputs": ["{options.outputFile}"],
-      "options": {
-        "lintFilePatterns": ["web/**/*.{ts,tsx,js,jsx}"]
-      }
+      "outputs": ["{options.outputFile}"]
     }
   },
   "tags": []

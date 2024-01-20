@@ -1,6 +1,6 @@
-# archi
+# Archi
 
-This project is generated with the [create-solana-dapp](https://github.com/solana-developers/create-solana-dapp) generator.
+Video game platform to play onchain games with a focus in mobile development.
 
 ## Getting Started
 
@@ -32,8 +32,6 @@ npm run install
 ```
 npm run dev
 ```
-
-## Apps
 
 ### anchor
 
