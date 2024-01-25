@@ -2,8 +2,6 @@
 
 Video game platform to play onchain games with a focus in mobile development. Steam-like video game purchasing experience.
 
-## Getting Started
-
 ### Prerequisites
 
 - Node v18.18.0 or higher
@@ -11,8 +9,6 @@ Video game platform to play onchain games with a focus in mobile development. St
 - Rust v1.70.0 or higher
 - Anchor CLI 0.29.0 or higher
 - Solana CLI 1.17.0 or higher
-
-### Installation
 
 #### Clone the repo
 
