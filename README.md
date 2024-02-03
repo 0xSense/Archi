@@ -1,6 +1,6 @@
 # Archi
 
-Video game platform to play onchain games with a focus in mobile development. Steam-like video game purchasing experience.
+Video game platform to play onchain games with a focus in mobile development. Tokenized engineering gaming.
 
 ### Prerequisites
 
