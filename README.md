@@ -1,6 +1,8 @@
 # Archi
 
-Video game platform to play onchain games with a focus in mobile development.
+Solana based mobile gaming hub.
+First Niche is to fit into the mobile space creating light weight games that have onchain functionality first.
+Later missions to expand into making onchain Desktop games that cav push creativity forward.
 
 ## Getting Started
 
