@@ -4,7 +4,7 @@ Solana based mobile gaming hub.
 
 ## Getting Started
 
-![alt text](.vscode\assets\Archi-FrontEnd.PNG)
+![alt text](https://github.com/0xSense/Archi/commit/239012eafc25be8bd6c4a39530d0425af0873493#diff-114beca97deef30798b53a17187084bc87263deac78dfd0a6ca3317f5bfda2ac)
 
 
 ### Prerequisites
