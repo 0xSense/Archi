@@ -4,6 +4,9 @@ Solana based mobile gaming hub.
 
 ## Getting Started
 
+![alt text](.vscode\assets\Archi-FrontEnd.PNG)
+
+
 ### Prerequisites
 
 - Node v18.18.0 or higher
