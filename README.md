@@ -2,9 +2,6 @@
 
 Video game platform to play onchain games with a focus in mobile development. Tokenized engineering gaming.
 
-![Archi-FrontEnd](https://github.com/0xSense/Archi/assets/105939929/af31d871-2689-46c7-b028-72a077191e25)
-
-
 ### Prerequisites
 
 - Node v18.18.0 or higher
@@ -40,7 +37,7 @@ This is a Solana program written in Rust using the Anchor framework.
 
 You can use any normal anchor commands. Either move to the `anchor` directory and run the `anchor` command or prefix the command with `npm run`, eg: `npm run anchor`.
 
-#### Sync the program id:
+#### Sync the program id
 
 Running this command will create a new keypair in the `anchor/target/deploy` directory and save the address to the Anchor config file and update the `declare_id!` macro in the `./src/lib.rs` file of the program.
 
@@ -50,13 +47,13 @@ You will manually need to update the constant in `anchor/lib/counter-exports.ts`
 npm run anchor keys sync
 ```
 
-#### Build the program:
+#### Build the program
 
 ```shell
 npm run anchor-build
 ```
 
-#### Start the test validator with the program deployed:
+#### Start the test validator with the program deployed
 
 ```shell
 npm run anchor-localnet
