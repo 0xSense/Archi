@@ -1,22 +1,12 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 html,
 body,
 #root {
   height: 100%;
+  padding: 0;
+  margin: 0;
 }
-.wallet-adapter-button-trigger {
-  background: rgb(100, 26, 230) !important;
-  border-radius: 8px !important;
-  padding-left: 16px !important;
-  padding-right: 16px !important;
-}
-.wallet-adapter-dropdown-list,
-.wallet-adapter-button {
-  font-family: inherit !important;
+:root {
+  color-scheme: light dark;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 }

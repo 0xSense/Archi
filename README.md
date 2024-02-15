@@ -1,22 +1,14 @@
 # Archi
 
-Solana based mobile gaming hub.
-
-Instruction led games via keypairs on solana.
-
-## Getting Started
-
-![alt text](https://github.com/0xSense/Archi/commit/239012eafc25be8bd6c4a39530d0425af0873493#diff-114beca97deef30798b53a17187084bc87263deac78dfd0a6ca3317f5bfda2ac)
-
+Video game platform to play onchain games with a focus in mobile development. Tokenized engineering gaming.
 
 ### Prerequisites
 
 - Node v18.18.0 or higher
+
 - Rust v1.70.0 or higher
 - Anchor CLI 0.29.0 or higher
 - Solana CLI 1.17.0 or higher
-
-### Installation
 
 #### Clone the repo
 
@@ -45,7 +37,7 @@ This is a Solana program written in Rust using the Anchor framework.
 
 You can use any normal anchor commands. Either move to the `anchor` directory and run the `anchor` command or prefix the command with `npm run`, eg: `npm run anchor`.
 
-#### Sync the program id:
+#### Sync the program id
 
 Running this command will create a new keypair in the `anchor/target/deploy` directory and save the address to the Anchor config file and update the `declare_id!` macro in the `./src/lib.rs` file of the program.
 
@@ -55,13 +47,13 @@ You will manually need to update the constant in `anchor/lib/counter-exports.ts`
 npm run anchor keys sync
 ```
 
-#### Build the program:
+#### Build the program
 
 ```shell
 npm run anchor-build
 ```
 
-#### Start the test validator with the program deployed:
+#### Start the test validator with the program deployed
 
 ```shell
 npm run anchor-localnet

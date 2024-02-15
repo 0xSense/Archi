@@ -1,27 +1,25 @@
-import { lazy } from 'react';
-
-import { Navigate, useRoutes } from 'react-router-dom';
-
-const AccountListFeature = lazy(() => import('./account/account-list-feature'));
-const AccountDetailFeature = lazy(
-  () => import('./account/account-detail-feature')
-);
-const ClusterFeature = lazy(() => import('./cluster/cluster-feature'));
-
-const CounterFeature = lazy(() => import('./counter/counter-feature'));
-
-const DashboardFeature = lazy(() => import('./dashboard/dashboard-feature'));
+import { Link, Navigate, useRoutes } from 'react-router-dom';
 
 export function AppRoutes() {
   return useRoutes([
-    { index: true, element: <Navigate to={'/dashboard'} replace={true} /> },
-    { path: '/account/', element: <AccountListFeature /> },
-    { path: '/account/:address', element: <AccountDetailFeature /> },
-    { path: '/clusters', element: <ClusterFeature /> },
-
-    { path: '/counter', element: <CounterFeature /> },
-
-    { path: '/dashboard', element: <DashboardFeature /> },
-    { path: '*', element: <Navigate to={'/dashboard'} replace={true} /> },
+    { index: true, element: <Navigate replace to="/home" /> },
+    {
+      path: '/home',
+      element: (
+        <div>
+          <p>Home page content</p>
+          <Link to="/page-1">Page 1</Link>
+        </div>
+      ),
+    },
+    {
+      path: '/page-1',
+      element: (
+        <div>
+          <p>Page 1 content</p>
+          <Link to="/home">Home</Link>
+        </div>
+      ),
+    },
   ]);
 }

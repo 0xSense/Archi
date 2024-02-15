@@ -1,1 +1,1 @@
-export * from './counter-exports';
+export * from './hello-world-exports';
