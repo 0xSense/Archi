@@ -1,0 +1,11 @@
+C:\Users\nashl\Projects\Archi\program\target\debug\deps\liblibc-e11a90e8b03cb8dc.rmeta: C:\Users\nashl\.cargo\registry\src\index.crates.io-6f17d22bba15001f\libc-0.2.153\src\lib.rs C:\Users\nashl\.cargo\registry\src\index.crates.io-6f17d22bba15001f\libc-0.2.153\src\macros.rs C:\Users\nashl\.cargo\registry\src\index.crates.io-6f17d22bba15001f\libc-0.2.153\src\fixed_width_ints.rs C:\Users\nashl\.cargo\registry\src\index.crates.io-6f17d22bba15001f\libc-0.2.153\src\windows\mod.rs C:\Users\nashl\.cargo\registry\src\index.crates.io-6f17d22bba15001f\libc-0.2.153\src\windows\msvc\mod.rs
+
+C:\Users\nashl\Projects\Archi\program\target\debug\deps\liblibc-e11a90e8b03cb8dc.rlib: C:\Users\nashl\.cargo\registry\src\index.crates.io-6f17d22bba15001f\libc-0.2.153\src\lib.rs C:\Users\nashl\.cargo\registry\src\index.crates.io-6f17d22bba15001f\libc-0.2.153\src\macros.rs C:\Users\nashl\.cargo\registry\src\index.crates.io-6f17d22bba15001f\libc-0.2.153\src\fixed_width_ints.rs C:\Users\nashl\.cargo\registry\src\index.crates.io-6f17d22bba15001f\libc-0.2.153\src\windows\mod.rs C:\Users\nashl\.cargo\registry\src\index.crates.io-6f17d22bba15001f\libc-0.2.153\src\windows\msvc\mod.rs
+
+C:\Users\nashl\Projects\Archi\program\target\debug\deps\libc-e11a90e8b03cb8dc.d: C:\Users\nashl\.cargo\registry\src\index.crates.io-6f17d22bba15001f\libc-0.2.153\src\lib.rs C:\Users\nashl\.cargo\registry\src\index.crates.io-6f17d22bba15001f\libc-0.2.153\src\macros.rs C:\Users\nashl\.cargo\registry\src\index.crates.io-6f17d22bba15001f\libc-0.2.153\src\fixed_width_ints.rs C:\Users\nashl\.cargo\registry\src\index.crates.io-6f17d22bba15001f\libc-0.2.153\src\windows\mod.rs C:\Users\nashl\.cargo\registry\src\index.crates.io-6f17d22bba15001f\libc-0.2.153\src\windows\msvc\mod.rs
+
+C:\Users\nashl\.cargo\registry\src\index.crates.io-6f17d22bba15001f\libc-0.2.153\src\lib.rs:
+C:\Users\nashl\.cargo\registry\src\index.crates.io-6f17d22bba15001f\libc-0.2.153\src\macros.rs:
+C:\Users\nashl\.cargo\registry\src\index.crates.io-6f17d22bba15001f\libc-0.2.153\src\fixed_width_ints.rs:
+C:\Users\nashl\.cargo\registry\src\index.crates.io-6f17d22bba15001f\libc-0.2.153\src\windows\mod.rs:
+C:\Users\nashl\.cargo\registry\src\index.crates.io-6f17d22bba15001f\libc-0.2.153\src\windows\msvc\mod.rs:

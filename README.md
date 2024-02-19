@@ -1,30 +1,98 @@
-# React + TypeScript + Vite
+# Archi
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Solana based mobile gaming hub.
 
-Currently, two official plugins are available:
+Instruction led games via keypairs on solana.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Getting Started
 
-## Expanding the ESLint configuration
+![alt text](https://github.com/0xSense/Archi/commit/239012eafc25be8bd6c4a39530d0425af0873493#diff-114beca97deef30798b53a17187084bc87263deac78dfd0a6ca3317f5bfda2ac)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-- Configure the top-level `parserOptions` property like this:
+### Prerequisites
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+- Node v18.18.0 or higher
+- Rust v1.70.0 or higher
+- Anchor CLI 0.29.0 or higher
+- Solana CLI 1.17.0 or higher
+
+### Installation
+
+#### Clone the repo
+
+```shell
+git clone <repo-url>
+cd <repo-name>
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+#### Install Dependencies
+
+```shell
+npm run install
+```
+
+#### Start the web app
+
+```
+npm run dev
+```
+
+### anchor
+
+This is a Solana program written in Rust using the Anchor framework.
+
+#### Commands
+
+You can use any normal anchor commands. Either move to the `anchor` directory and run the `anchor` command or prefix the command with `npm run`, eg: `npm run anchor`.
+
+#### Sync the program id:
+
+Running this command will create a new keypair in the `anchor/target/deploy` directory and save the address to the Anchor config file and update the `declare_id!` macro in the `./src/lib.rs` file of the program.
+
+You will manually need to update the constant in `anchor/lib/counter-exports.ts` to match the new program id.
+
+```shell
+npm run anchor keys sync
+```
+
+#### Build the program:
+
+```shell
+npm run anchor-build
+```
+
+#### Start the test validator with the program deployed:
+
+```shell
+npm run anchor-localnet
+```
+
+#### Run the tests
+
+```shell
+npm run anchor-test
+```
+
+#### Deploy to Devnet
+
+```shell
+npm run anchor deploy --provider.cluster devnet
+```
+
+### web
+
+This is a React app that uses the Anchor generated client to interact with the Solana program.
+
+#### Commands
+
+Start the web app
+
+```shell
+npm run dev
+```
+
+Build the web app
+
+```shell
+npm run build
+```
