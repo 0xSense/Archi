@@ -1,6 +1,6 @@
 import * as anchor from '@coral-xyz/anchor';
 import { Program } from '@coral-xyz/anchor';
-import { HelloWorld } from '../target/types/hello_world';
+import { HelloWorld } from '../target/types/hello-world';
 
 describe('hello-world', () => {
   // Configure the client to use the local cluster.
